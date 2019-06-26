@@ -1,3 +1,7 @@
-function Thermostat(temp=20) {
-  this.temp = temp;
+function Thermostat() {
+  this.temp = 20;
+};
+
+Thermostat.prototype.getCurrentTemp = function() {
+  return this.temp;
 };
