@@ -6,7 +6,7 @@ describe('Thermostat', function() {
   beforeEach(function() {
     thermostat = new Thermostat();
   });
- 
+
   it ('starts at 20 degrees', function(){
     expect(thermostat.getCurrentTemp()).toEqual(20);
   });
@@ -17,4 +17,12 @@ describe('Thermostat', function() {
       expect(thermostat.getCurrentTemp()).toEqual(21);
     });
   });
+
+  describe('down', function() {
+    it ('the temp is descreased by 1 degree', function() {
+      thermostat.down();
+      expect(thermostat.getCurrentTemp()).toEqual(19);
+    });
+  });
+
 });
