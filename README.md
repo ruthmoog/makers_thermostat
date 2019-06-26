@@ -25,3 +25,9 @@ As a house dweller,
 So that I can make my house warmer
 I would like to increase the temperature
 ```
+
+```
+As a house dweller,
+So that I can make my house cooler
+I would like to decrease the temperature
+```
