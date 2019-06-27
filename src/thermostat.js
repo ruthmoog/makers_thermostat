@@ -28,14 +28,14 @@ Thermostat.prototype.up = function() {
   if (this.isMaxTemp()) {
     return;
   }
-  return (this.temp += 1);
+  return (this.temp++);
 };
 
 Thermostat.prototype.down = function() {
   if (this.isMinTemp()) {
     return;
   }
-  this.temp -= 1;
+  this.temp--;
 };
 
 Thermostat.prototype.powerSavingModeOff = function() {
