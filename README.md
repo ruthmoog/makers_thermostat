@@ -34,6 +34,12 @@ I would like to decrease the temperature
 
 ```
 As a house dweller,
-So that I can make my house never gets too cold
+So that I can make sure my house never gets too cold
 I would like a minimum temperature limit of 10 degrees C
+```
+
+```
+As an energy concious house dweller
+So that I can save energy
+I expect to have a power saving mode with a mx temperature of 25 degrees
 ```
