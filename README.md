@@ -56,3 +56,15 @@ As an energy concious house dweller
 So that I can save energy
 I expect to have a power saving mode swtiched on, by default
 ```
+
+```
+As a house dweller
+So that I can reset the temperature to the default status
+I want a reset button
+```
+
+```
+As an energy concious house dweller
+So that I am aware of my energy usage
+I want my current energy usage to be indicated by a range
+```

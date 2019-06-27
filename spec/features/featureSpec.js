@@ -57,4 +57,35 @@ describe("Thermostat", function() {
       expect(thermostat.getCurrentTemp()).toEqual(32);
     });
   });
+
+  describe("reset", function() {
+    it("resets the temperature to 20 degrees C", function() {
+      thermostat.up();
+      thermostat.reset();
+      expect(thermostat.getCurrentTemp()).toEqual(20);
+    });
+  });
+
+  describe("energy usage", function() {
+    it("returns low usage when temp is below 18", function() {
+      for (var i = 0; i < 3; i++) {
+        thermostat.down();
+      }
+      expect(thermostat.energyUsage()).toEqual("low-usage");
+    });
+
+    it("returns medium when temp is between 18 and 24 inclusive", function() {
+      for (var i = 0; i < 4; i++) {
+        thermostat.up();
+      }
+      expect(thermostat.energyUsage()).toEqual("medium-usage");
+    });
+
+    it("returns high when temp is 25 or above", function() {
+      for (var i = 0; i < 7; i++) {
+        thermostat.up();
+      }
+      expect(thermostat.energyUsage()).toEqual("high-usage");
+    });
+  });
 });
