@@ -56,6 +56,13 @@ describe("Thermostat", function() {
       }
       expect(thermostat.getCurrentTemp()).toEqual(32);
     });
+
+    it("can be switched on again", function() {
+      thermostat.powerSavingModeOff();
+      expect(thermostat.isPowerSavingModeOn()).toEqual(false);
+      thermostat.powerSavingModeOn();
+      expect(thermostat.isPowerSavingModeOn()).toEqual(true);
+    });
   });
 
   describe("reset", function() {
