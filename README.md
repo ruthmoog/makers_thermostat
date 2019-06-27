@@ -1,6 +1,7 @@
 # Thermostat
 
 ## Specification
+
 - Thermostat starts at 20 degrees
 - You can increase the temperature with an up function
 - You can decrease the temperature with a down function
@@ -42,4 +43,16 @@ I would like a minimum temperature limit of 10 degrees C
 As an energy concious house dweller
 So that I can save energy
 I expect to have a power saving mode with a mx temperature of 25 degrees
+```
+
+```
+As a house dweller
+So that I can feel like i'm in the desert during winter
+I expect to have a max temperature of 32 degrees when power saver is off
+```
+
+```
+As an energy concious house dweller
+So that I can save energy
+I expect to have a power saving mode swtiched on, by default
 ```

@@ -43,5 +43,18 @@ describe("Thermostat", function() {
       }
       expect(thermostat.getCurrentTemp()).toEqual(25);
     });
+
+    it("can be switched off", function() {
+      thermostat.powerSavingModeOff();
+      expect(thermostat.isPowerSavingModeOn()).toEqual(false);
+    });
+
+    it("when off, has a maximum temperature of 32 degrees C", function() {
+      thermostat.powerSavingModeOff();
+      for (var i = 0; i < 13; i++) {
+        thermostat.up();
+      }
+      expect(thermostat.getCurrentTemp()).toEqual(32);
+    });
   });
 });
