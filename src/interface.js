@@ -1,7 +1,7 @@
 $(document).ready(function() {
   var thermostat = new Thermostat();
+  indicateTemperature();
   indicateEnergyUsage();
-
 
   $("#energy_use").click(function() {
     indicateEnergyUsage();
@@ -14,5 +14,9 @@ $(document).ready(function() {
     $("#energy_use")
       .removeClass()
       .addClass(`${status}`);
+  }
+
+  function indicateTemperature() {
+    $("h1").text(`${thermostat.temp}`);
   }
 });
