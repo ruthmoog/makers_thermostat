@@ -1,0 +1,9 @@
+.low-usage {
+  background-color: #4ef542;
+}
+.medium-usage {
+  background-color: #fad507;
+}
+.high-usage {
+  background-color: #be0606;
+}
